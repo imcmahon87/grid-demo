@@ -1,0 +1,105 @@
+/* FONTS
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-family: 'Inter', sans-serif;
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 4em;
+    margin: 0;
+    line-height: 1;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 7em 50vh 20vh 5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#header-title {
+    width: 40%;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+#header-nav a:link, #header-nav a:visited {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #000033;
+    text-decoration: none;
+}
+
+#header-nav a:hover, #header-nav a:active {
+    color: #e65c00;
+}
+
+footer {
+    background-color: blue;
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+
+#main-content-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content-left img {
+    display: block;
+}
+
+#main-content-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-sellers-1 {
+    background-color: purple;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#top-sellers-2 {
+    background-color: orange;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#top-sellers-3 {
+    background-color: cyan;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
