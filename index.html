@@ -11,14 +11,25 @@
 </head>
 <body>
     <div id="container">
+        <div id="header-nav-menu-mobile">
+            <img onclick="mobileMenuToggle()" src="./images/mobile-menu-exit.png">
+            <a onclick="mobileMenuToggle()" href="#">Home</a>
+            <a onclick="mobileMenuToggle()" href="#">Bestsellers</a>
+            <a onclick="mobileMenuToggle()" href="#">Reviews</a>
+            <a onclick="mobileMenuToggle()" href="#">Articles</a>
+            <a onclick="mobileMenuToggle()" href="#">Categories</a>
+        </div>
         <header>
             <div id="header-title-mobile">
                 <h1>TBB</h1>
             </div>
+            <div id="header-nav-mobile">
+                <img onclick="mobileMenuToggle()" src="./images/mobile-menu.png">
+            </div>
             <div id="header-title-desktop">
                 <h1>The Book Bulletin</h1>
             </div>
-            <div id="header-desktop-nav">
+            <div id="header-nav-desktop">
                 <a href="#">Home</a>
                 <a href="#">Bestsellers</a>
                 <a href="#">Reviews</a>
@@ -96,5 +107,19 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('header-nav-menu-mobile').style.display = 'none';
+
+        function mobileMenuToggle() {
+            let menu = document.getElementById('header-nav-menu-mobile');
+            if (menu.style.display === 'none') {
+                console.log(menu.style.display);
+                menu.style.display = 'flex';
+            } else {
+                console.log(menu.style.display);
+                menu.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
